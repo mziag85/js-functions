@@ -42,4 +42,22 @@ function bmiCalculator (weight,height){
  bmiCalculator(60, 1.65);
  bmiCalculator(80, 1.85);
 
+ // 5 დავალება: BMI- კალკულატორი-გაუმჯობესებული
+
+  function bmiCalculator(weight, height) {
+ let bmi = Math.floor(weight / (height**2)); 
+if (bmi< 18.5){
+ 
+   return (`Your BMI is ${bmi}, so you are underweight.`)
+  }
+  else if (bmi < 24.9){
+return (`Your BMI is ${bmi}, so you have a normal weight.`)
+
+  }
+  else {
+    return (`Your BMI is ${bmi}, so you are overweight.`)
+  } 
+}
+bmiCalculator(60, 1.65);
+
 
